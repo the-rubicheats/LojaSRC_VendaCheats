@@ -1,88 +1,73 @@
-# Apresentando o Painel Administrativo RubiCheats para websites de cheats:
-![Copy of Copy of Fullstack Twitter Clone (1)](https://cdn.discordapp.com/attachments/1202668266405892159/1214388408839839815/painelbyRubi.PNG?ex=65f8ee56&is=65e67956&hm=31de24fad2b07c102214eb00571f969a326f0b4fe517ab5eab6c468dc42bfa4e&)
+<h1 align="center">Source da sua Loja</h1>
 
-Para uma demonstração, utilize os [Cartões de teste da Stripe](https://stripe.com/docs/testing)
+<div align="center">
+  <strong><img src="https://skillicons.dev/icons?i=vscode" width="48"></strong>
+</div>
+<div align="center">
+  Um projeto incrível com Laravel, Docker e React!
+</div>
 
-Este é um repositório para um Painel Administrativo, desenvolvido pelo RubiCheats, especialmente projetado para websites de cheats.
+## 🛠️ Pré-requisitos
 
-[VIDEO TUTORIAL](https://youtu.be/LKY252UULTw?si=a8IUb1CKA2wmqaA)
+Antes de começar, certifique-se de que você tenha as seguintes ferramentas instaladas em sua máquina:
 
-## Principais Recursos:
+- Docker 🐳
+- Docker Compose 🐙
 
-- O painel administrativo serve tanto como CMS, Admin e API!
-- Criação, atualização e exclusão de categorias!
-- Criação, atualização e exclusão de produtos!
-- Upload de várias imagens para produtos e alteração a qualquer momento!
-- Criação, atualização e exclusão de filtros como "Cor" e "Tamanho", e correspondência no formulário de criação de "Produto".
-- Criação, atualização e exclusão de "Banners", que são grandes textos no topo da página. Eles podem ser anexados a uma única categoria ou usados independentemente (Nosso Admin gera API para todos esses casos!)
-- Pesquisa em todas as categorias, produtos, tamanhos, cores, painéis publicitários, com paginação incluída!
-- Controle de produtos "destacados" para que apareçam na página inicial!
-- Visualização de pedidos, vendas, etc.
-- Gráficos de receita, etc.
-- Autenticação do Clerk!
-- Criação de Pedidos
-- Finalização de compra da Stripe
-- Webhooks da Stripe
+## 🚀 Passo a passo interativo
 
+Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
-### Pré-requisitos
+1️⃣ **Clone o repositório**
 
-**Node version 14.x**
+   Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
 
-### Clonando o Repositório
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-```shell
-git clone [https://github.com/the-rubicheats/RubiPanel.git]
-```
+   Isso criará uma cópia local do repositório em seu ambiente.
 
-### Instalando Pacotes
+2️⃣ **Inicialize os contêineres Docker**
 
-```shell
-npm i
-```
+   Navegue até o diretório raiz do projeto e execute o seguinte comando para iniciar os contêineres Docker:
 
-### Configurando o arquivo .env
+   ```bash
+   docker-compose up -d
+   ```
 
+   🐳 Isso iniciará os contêineres necessários para o projeto, incluindo o servidor Laravel e o cliente React.
 
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+3️⃣ **Acesse a API REST Laravel**
 
-# Isso foi inserido pelo `prisma init`:
-# As variáveis de ambiente declaradas neste arquivo são automaticamente disponibilizadas para o Prisma.
-# Consulte a documentação para mais detalhes: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+   Após iniciar os contêineres, você pode acessar a API REST do Laravel através do seu navegador no endereço [http://localhost:8000](http://localhost:8000).
 
-# Prisma suporta o formato de string de conexão nativa para PostgreSQL, MySQL, SQLite, SQL Server, MongoDB e CockroachDB.
-# Consulte a documentação para todas as opções de string de conexão: https://pris.ly/d/connection-strings
+4️⃣ **Acesse o front-end React**
 
-DATABASE_URL=''
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
-STRIPE_API_KEY=
-FRONTEND_STORE_URL=http://localhost:3001
-STRIPE_WEBHOOK_SECRET=
-```
+   Você também pode acessar o front-end React através do seu navegador no endereço [http://localhost:3000](http://localhost:3000).
 
-### Conectando-se ao Banco de Dados e Enviando o Prisma
-```shell
-npx prisma generate
-npx prisma db push
-```
+5️⃣ **Modifique o projeto**
+
+   Agora que você tem o projeto em execução, é possível fazer modificações no código conforme necessário. Sinta-se à vontade para explorar e adaptar o projeto de acordo com suas necessidades.
+
+6️⃣ **Publique suas modificações**
+
+   Se desejar publicar suas modificações em um repositório remoto no GitHub, siga estes passos:
+
+   1️⃣ Crie um novo repositório vazio no GitHub.
+   2️⃣ No terminal, navegue até o diretório raiz do projeto.
+   3️⃣ Execute os seguintes comandos:
+
+   ```bash
+   git remote set-url origin https://github.com/seu-usuario/nome-do-novo-repositorio.git
+   git add .
+   git commit -m "Adicionar minhas modificações"
+   git push -u origin master
+   ```
+
+   Isso configurará o repositório remoto e enviará suas modificações para lá.
 
 
-### Iniciando o app
-
-```shell
-npm run dev
-```
-
-## Comandos Disponíveis
-
-Executando comandos com npm `npm run [command]`
-
-| command         | Descrição                                |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Inicia uma instância do app              |
+<div align="center">
+  Espero que este guia tenha sido útil e que você aproveite ao máximo o projeto utilizando Laravel, Docker e React. 🎉😄
+</div>
