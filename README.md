@@ -36,15 +36,39 @@ Siga os passos abaixo para iniciar o projeto em seu ambiente local:
    npm run dev
    ```
 
-2️⃣ **Realize o deploy **
+**Publique suas modificações**
 
-   Navegue até o diretório raiz do projeto e execute o seguinte comando para iniciar os contêineres Docker:
+   É necessario publicar suas modificações em um repositório remoto no GitHub, siga estes passos:
+
+   1️⃣ Crie um novo repositório vazio no GitHub.
+   2️⃣ No terminal, navegue até o diretório raiz do source da sua loja.
+   3️⃣ Execute os seguintes comandos:
 
    ```bash
-   docker-compose up -d
+   git remote set-url origin https://github.com/seu-usuario/nome-do-novo-repositorio.git
+   git add .
+   git commit -m "Adicionar Upadate da Loja"
+   git push -u origin master
    ```
 
-   🐳 Isso iniciará os contêineres necessários para o projeto, incluindo o servidor Laravel e o cliente React.
+   Isso configurará o repositório remoto e enviará suas modificações para lá.
+
+
+2️⃣ **Realize o deploy na Vercel**
+
+   Adicione um novo projeto a Vercel e importe o repositório com sua loja, em 'Environment Variables' cole seu .env e clique em Fazer Deploy
+
+   ```bash
+   #Seu arquivo .env
+###
+NEXT_PUBLIC_NOME_LOJA=VendaCheats
+NEXT_PUBLIC_SITE_LOJA=http://localhost:3001
+NEXT_PUBLIC_WEBHOOK_DISCORD=https://discord.com/api/webhooks/1333642693591531701/3KkMOqXAws4gc4rHxuygaOE45TUTq5rxvfvQU-  sFG73IKornZyYXWBY14-jzfpHFHN2X
+NEXT_PUBLIC_API_STRIPE=sk_test_615Ee4oFnSspoNlV6pLk4ApWAE7sJLEhhpHRnBTBRrr2JPmgrNlwqkceTpx366b7LHFsHSIXZHb2UE3OWMbHXd6Y100zmsIyaOc
+NEXT_PUBLIC_API_URL=http://localhost:3000/api/b0b6e3c4-2dc10-419c-8f08-80cf0f473105
+###
+   ```
+   Lembre de não compartilhar com ninguém, adicionar qualquer espaçamento ou esquecer do http ou https em NEXT_PUBLIC_SITE_LOJA no arquivo .env
 
 3️⃣ **Acesse a API REST Laravel**
 
