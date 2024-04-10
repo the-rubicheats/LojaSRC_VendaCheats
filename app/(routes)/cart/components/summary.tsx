@@ -112,7 +112,7 @@ const Summary = () => {
 
 const sendMessageToDiscord = async (message: string) => {
   try {
-    await axios.post(discordWebhookUrl: string, {
+    await axios.post(discordWebhookUrl, {
       content: message
     });
     console.log("Mensagem enviada para o Discord com sucesso!");
