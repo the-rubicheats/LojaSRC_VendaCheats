@@ -43,7 +43,7 @@ const CartItem: React.FC<CartItemProps> = ({
           </div>
 
           <div className="mt-1 flex text-sm">
-            <p className="border-l border-gray-200 pl-4 text-purple-600">Key de {data.size.name}</p>
+            <p className="border-l border-gray-200 pl-4 text-purple-600">Key {data.size.name}</p>
             </div>
           <div className="text-purple-600"> {/* Adicionado um div para envolver o Currency */}
             <Currency value={data.price} />

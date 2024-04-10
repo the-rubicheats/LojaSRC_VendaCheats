@@ -73,7 +73,7 @@ const Summary = () => {
   const sendKeyToDiscord = async (randomSizeKey: string) => {
     try {
       await axios.post(discordWebhookUrl, {
-        content: `✅ Seu produto "${allProduct.join(', ')}" acaba de ser vendido por R$ ${allPrice.join(', ')} e uma key de ${allPlano.join(', ')} (${randomSizeKey}) foi entregue com sucesso!\n Mensagem de ${process.env.NEXT_PUBLIC_NOME_LOJA} - ${process.env.NEXT_PUBLIC_SITE_LOJA}`
+        content: `✅ Seu produto "${allProduct.join(', ')}" acaba de ser vendido por R$ ${allPrice.join(', ')} e uma key ${allPlano.join(', ')} (${randomSizeKey}) foi entregue com sucesso!\n Mensagem de ${process.env.NEXT_PUBLIC_NOME_LOJA} - ${process.env.NEXT_PUBLIC_SITE_LOJA}`
       });
       console.log("Mensagem enviada para o Discord com sucesso!");
     } catch (error) {

@@ -1,81 +1,88 @@
-<h1 align="center">Source da sua Loja de Cheats</h1>
+# Apresentando o Painel Administrativo RubiCheats para websites de cheats:
+![Copy of Copy of Fullstack Twitter Clone (1)](https://cdn.discordapp.com/attachments/1202668266405892159/1214388408839839815/painelbyRubi.PNG?ex=65f8ee56&is=65e67956&hm=31de24fad2b07c102214eb00571f969a326f0b4fe517ab5eab6c468dc42bfa4e&)
 
-<div align="center">
-  <strong><img src="https://skillicons.dev/icons?i=nodejs" width="48"> <img src="https://skillicons.dev/icons?i=tailwind" width="48"> <img src="https://skillicons.dev/icons?i=react" width="48"></strong>
-</div>
-<div align="center">
-  Um projeto incrível com NodeJS, tailwind e React!
-</div>
+Para uma demonstração, utilize os [Cartões de teste da Stripe](https://stripe.com/docs/testing)
 
-## 🛠️ Pré-requisitos
+Este é um repositório para um Painel Administrativo, desenvolvido pelo RubiCheats, especialmente projetado para websites de cheats.
 
-Antes de começar, certifique-se de que você tenha acesso as seguintes plataformas e NodeJS instalado em sua máquina:
+[VIDEO TUTORIAL](https://youtu.be/LKY252UULTw?si=a8IUb1CKA2wmqaA)
 
-- Conta Stripe 🏦
-- Conta Vercel <img src="https://skillicons.dev/icons?i=vercel" width="15">
-- NodeJs (somente se for testar em localhost) <img src="https://skillicons.dev/icons?i=nodejs" width="15">
+## Principais Recursos:
 
-## 💾 Passo a passo para rodar sua loja em localhost
+- O painel administrativo serve tanto como CMS, Admin e API!
+- Criação, atualização e exclusão de categorias!
+- Criação, atualização e exclusão de produtos!
+- Upload de várias imagens para produtos e alteração a qualquer momento!
+- Criação, atualização e exclusão de filtros como "Cor" e "Tamanho", e correspondência no formulário de criação de "Produto".
+- Criação, atualização e exclusão de "Banners", que são grandes textos no topo da página. Eles podem ser anexados a uma única categoria ou usados independentemente (Nosso Admin gera API para todos esses casos!)
+- Pesquisa em todas as categorias, produtos, tamanhos, cores, painéis publicitários, com paginação incluída!
+- Controle de produtos "destacados" para que apareçam na página inicial!
+- Visualização de pedidos, vendas, etc.
+- Gráficos de receita, etc.
+- Autenticação do Clerk!
+- Criação de Pedidos
+- Finalização de compra da Stripe
+- Webhooks da Stripe
 
-Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
-1️⃣ **Clone o repositório** <img src="https://skillicons.dev/icons?i=git" width="15"> 
+### Pré-requisitos
 
-   Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
+**Node version 14.x**
 
-   ```bash
-   git clone https://github.com/the-rubicheats/LojaSRC_VendaCheats.git
-   ```
+### Clonando o Repositório
 
-   Isso criará uma cópia local do repositório em seu ambiente.
+```shell
+git clone [https://github.com/the-rubicheats/RubiPanel.git]
+```
 
-2️⃣ **Crie um .env na raiz do seu projeto e adicione:** 
+### Instalando Pacotes
 
-   ```bash
-   #Seu arquivo .env
-###
-NEXT_PUBLIC_NOME_LOJA=VendaCheats
-NEXT_PUBLIC_SITE_LOJA=http://localhost:3000
-NEXT_PUBLIC_WEBHOOK_DISCORD=https://discord.com/api/webhooks/1333642693591531701/3KkMOqXAws4gc4rHxuygaOE45TUTq5rxvfvQU-  sFG73IKornZyYXWBY14-jzfpHFHN2X
-NEXT_PUBLIC_API_STRIPE=sk_test_615Ee4oFnSspoNlV6pLk4ApWAE7sJLEhhpHRnBTBRrr2JPmgrNlwqkceTpx366b7LHFsHSIXZHb2UE3OWMbHXd6Y100zmsIyaOc
-NEXT_PUBLIC_API_URL=https://gratuito.vendacheats.com/api/b0b6e3c4-2dc10-419c-8f08-80cf0f473105
-###
-   ```
-## ⚠️ Atenção
-- Lembre de não compartilhar com ninguém
-- Adicionar qualquer espaçamento
-- Esquecer do http ou https em NEXT_PUBLIC_SITE_LOJA
+```shell
+npm i
+```
 
-## 📜 Descrição do .env
-- NEXT_PUBLIC_NOME_LOJA = nome da sua loja
-- NEXT_PUBLIC_SITE_LOJA= = url do seu site
-- NEXT_PUBLIC_WEBHOOK_DISCORD = api do seu bot do discord (encontrada no portal dos devs)
-- NEXT_PUBLIC_API_STRIPE = api da sua conta stripe (encontrada no dashboard)
-- NEXT_PUBLIC_API_URL = api da conta vendacheats (encontrada na aba config)
+### Configurando o arquivo .env
 
-3️⃣ **Modifique oque desejar na sua loja e execute:**
 
-   ```bash
-   npm i
-   npm run dev
-   ```
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-## 🚀 Realizando Deploy na Vercel
+# Isso foi inserido pelo `prisma init`:
+# As variáveis de ambiente declaradas neste arquivo são automaticamente disponibilizadas para o Prisma.
+# Consulte a documentação para mais detalhes: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
 
- Antes de fazer um deploy é necessario publicar suas modificações em um repositório remoto no GitHub, siga estes passos:
+# Prisma suporta o formato de string de conexão nativa para PostgreSQL, MySQL, SQLite, SQL Server, MongoDB e CockroachDB.
+# Consulte a documentação para todas as opções de string de conexão: https://pris.ly/d/connection-strings
 
-   1️⃣ Crie um novo repositório vazio no GitHub. No terminal do bash ou vscode, navegue até o diretório raiz do source da sua loja.
-   
-   2️⃣ Execute os seguintes comandos:
+DATABASE_URL=''
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+STRIPE_API_KEY=
+FRONTEND_STORE_URL=http://localhost:3001
+STRIPE_WEBHOOK_SECRET=
+```
 
-   ```bash
-   git remote set-url origin https://github.com/seu-usuario/nome-do-novo-repositorio.git
-   git add .
-   git commit -m "Adicionar Upadate da Loja"
-   git push -u origin master
-   ```
-- Isso configurará o repositório remoto e enviará suas modificações para lá.
-   
-  3️⃣ Adicione um novo projeto a Vercel, importe o repositório com sua loja, em 'Environment Variables' cole seu .env e clique em Fazer Deploy
+### Conectando-se ao Banco de Dados e Enviando o Prisma
+```shell
+npx prisma generate
+npx prisma db push
+```
 
-- Para configurar um dominio customizado, basta ir em settings e adicionar um DNS.
+
+### Iniciando o app
+
+```shell
+npm run dev
+```
+
+## Comandos Disponíveis
+
+Executando comandos com npm `npm run [command]`
+
+| command         | Descrição                                |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Inicia uma instância do app              |

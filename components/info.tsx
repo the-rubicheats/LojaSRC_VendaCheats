@@ -31,7 +31,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-white">Status:</h3>
           <div>
-            Indetectável
+            Disponível
           </div>
           </div>
       </div>
