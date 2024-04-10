@@ -12,23 +12,31 @@
 Antes de começar, certifique-se de que você tenha as seguintes ferramentas instaladas em sua máquina:
 
 - Conta Stripe 🏦
+- Conta Vercel 
 - NodeJs (somente se for testar em localhost) 🖥
 
 ## 🚀 Passo a passo interativo
 
 Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
-<img src="https://skillicons.dev/icons?i=git" width="20"> **Clone o repositório**
+<img src="https://skillicons.dev/icons?i=git" width="25"> **Clone o repositório**
 
    Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/the-rubicheats/LojaSRC_VendaCheats.git
    ```
 
    Isso criará uma cópia local do repositório em seu ambiente.
 
-2️⃣ **Inicialize os contêineres Docker**
+   Modifique oque desejar e execute:
+
+   ```bash
+   npm i
+   npm run dev
+   ```
+
+2️⃣ **Realize o deploy **
 
    Navegue até o diretório raiz do projeto e execute o seguinte comando para iniciar os contêineres Docker:
 
