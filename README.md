@@ -4,7 +4,7 @@
   <strong><img src="https://skillicons.dev/icons?i=vscode" width="48"></strong>
 </div>
 <div align="center">
-  Um projeto incrível com NodeJS, Typescript e React!
+  Um projeto incrível com NodeJS, tailwind e React!
 </div>
 
 ## 🛠️ Pré-requisitos
@@ -12,13 +12,13 @@
 Antes de começar, certifique-se de que você tenha as seguintes ferramentas instaladas em sua máquina:
 
 - Conta Stripe 🏦
-- NodeJs (somente se for testar em localhost) 🖥️
+- NodeJs (somente se for testar em localhost) 🖥
 
 ## 🚀 Passo a passo interativo
 
 Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
-1️⃣ **Clone o repositório**
+<img src="https://skillicons.dev/icons?i=git" width="48"> **Clone o repositório**
 
    Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
 
