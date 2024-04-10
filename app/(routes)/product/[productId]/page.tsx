@@ -30,12 +30,15 @@ const ProductPage: React.FC<ProductPageProps> = async ({
       <Container>
         <div className="px-4 py-10 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+            <Gallery images={product.images} />
             <div className="text-purple-600 mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
               <Info data={product} />
             </div>
           </div>
-          <hr className="text-white my-10" />
+          <div className="text-white">
+          <hr className="my-10" />
           <ProductList title="Relacionados" items={suggestedProducts} />
+          </div>  
         </div>
       </Container>
     </div>  
