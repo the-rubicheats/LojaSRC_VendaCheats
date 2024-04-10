@@ -15,7 +15,7 @@ Antes de começar, certifique-se de que você tenha acesso as seguintes platafor
 - Conta Vercel <img src="https://skillicons.dev/icons?i=vercel" width="15">
 - NodeJs (somente se for testar em localhost) <img src="https://skillicons.dev/icons?i=nodejs" width="15">
 
-## 🚀 Passo a passo para rodar sua loja em localhost
+## 💾 Passo a passo para rodar sua loja em localhost
 
 Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
@@ -60,7 +60,7 @@ NEXT_PUBLIC_API_URL=https://gratuito.vendacheats.com/api/b0b6e3c4-2dc10-419c-8f0
    npm run dev
    ```
 
-4️⃣ **Realizando o deploy na Vercel**
+## 🚀 Realizando Deploy na Vercel
 
  Antes de fazer um deploy é necessario publicar suas modificações em um repositório remoto no GitHub, siga estes passos:
 
