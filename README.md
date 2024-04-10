@@ -4,15 +4,15 @@
   <strong><img src="https://skillicons.dev/icons?i=vscode" width="48"></strong>
 </div>
 <div align="center">
-  Um projeto incrível com Laravel, Docker e React!
+  Um projeto incrível com NodeJS, Typescript e React!
 </div>
 
 ## 🛠️ Pré-requisitos
 
 Antes de começar, certifique-se de que você tenha as seguintes ferramentas instaladas em sua máquina:
 
-- Docker 🐳
-- Docker Compose 🐙
+- Conta Stripe 🏦
+- NodeJs (somente se for testar em localhost) 🖥️
 
 ## 🚀 Passo a passo interativo
 
