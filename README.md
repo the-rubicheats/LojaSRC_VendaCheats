@@ -18,7 +18,7 @@ Antes de começar, certifique-se de que você tenha as seguintes ferramentas ins
 
 Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
-<img src="https://skillicons.dev/icons?i=git" width="48"> **Clone o repositório**
+<img src="https://skillicons.dev/icons?i=git" width="20"> **Clone o repositório**
 
    Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
 
