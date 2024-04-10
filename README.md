@@ -41,7 +41,7 @@ NEXT_PUBLIC_API_STRIPE=sk_test_615Ee4oFnSspoNlV6pLk4ApWAE7sJLEhhpHRnBTBRrr2JPmgr
 NEXT_PUBLIC_API_URL=https://gratuito.vendacheats.com/api/b0b6e3c4-2dc10-419c-8f08-80cf0f473105
 ###
    ```
-## ⚠️ Ateção
+## ⚠️ Atenção
 - Lembre de não compartilhar com ninguém
 - Adicionar qualquer espaçamento
 - Esquecer do http ou https em NEXT_PUBLIC_SITE_LOJA
@@ -76,8 +76,6 @@ NEXT_PUBLIC_API_URL=https://gratuito.vendacheats.com/api/b0b6e3c4-2dc10-419c-8f0
    ```
 - Isso configurará o repositório remoto e enviará suas modificações para lá.
    
-   3️⃣ Adicione um novo projeto a Vercel e importe o repositório com sua loja, em 'Environment Variables' cole seu .env e clique em Fazer Deploy
+  3️⃣ Adicione um novo projeto a Vercel, importe o repositório com sua loja, em 'Environment Variables' cole seu .env e clique em Fazer Deploy
 
-<div align="center">
-  Espero que este guia tenha sido útil e que você aproveite ao máximo o projeto utilizando Laravel, Docker e React. 🎉😄
-</div>
+- Para configurar um dominio customizado, basta ir em settings e adicionar um DNS.
